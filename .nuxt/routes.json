@@ -1,0 +1,122 @@
+[
+  {
+    "name": "10thquestion",
+    "path": "/10thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/10thquestion.vue",
+    "chunkName": "pages/10thquestion"
+  },
+  {
+    "name": "11thquestion",
+    "path": "/11thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/11thquestion.vue",
+    "chunkName": "pages/11thquestion"
+  },
+  {
+    "name": "12thquestion",
+    "path": "/12thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/12thquestion.vue",
+    "chunkName": "pages/12thquestion"
+  },
+  {
+    "name": "13thquestion",
+    "path": "/13thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/13thquestion.vue",
+    "chunkName": "pages/13thquestion"
+  },
+  {
+    "name": "14thquestion",
+    "path": "/14thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/14thquestion.vue",
+    "chunkName": "pages/14thquestion"
+  },
+  {
+    "name": "15thquestion",
+    "path": "/15thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/15thquestion.vue",
+    "chunkName": "pages/15thquestion"
+  },
+  {
+    "name": "16thquestion",
+    "path": "/16thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/16thquestion.vue",
+    "chunkName": "pages/16thquestion"
+  },
+  {
+    "name": "17thquestion",
+    "path": "/17thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/17thquestion.vue",
+    "chunkName": "pages/17thquestion"
+  },
+  {
+    "name": "9thquestion",
+    "path": "/9thquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/9thquestion.vue",
+    "chunkName": "pages/9thquestion"
+  },
+  {
+    "name": "eightquestion",
+    "path": "/eightquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/eightquestion.vue",
+    "chunkName": "pages/eightquestion"
+  },
+  {
+    "name": "endpage",
+    "path": "/endpage",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/endpage.vue",
+    "chunkName": "pages/endpage"
+  },
+  {
+    "name": "fifthquestion",
+    "path": "/fifthquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/fifthquestion.vue",
+    "chunkName": "pages/fifthquestion"
+  },
+  {
+    "name": "firstquestion",
+    "path": "/firstquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/firstquestion.vue",
+    "chunkName": "pages/firstquestion"
+  },
+  {
+    "name": "fourthquestion",
+    "path": "/fourthquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/fourthquestion.vue",
+    "chunkName": "pages/fourthquestion"
+  },
+  {
+    "name": "result",
+    "path": "/result",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/result.vue",
+    "chunkName": "pages/result"
+  },
+  {
+    "name": "secondquestion",
+    "path": "/secondquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/secondquestion.vue",
+    "chunkName": "pages/secondquestion"
+  },
+  {
+    "name": "seventhquestion",
+    "path": "/seventhquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/seventhquestion.vue",
+    "chunkName": "pages/seventhquestion"
+  },
+  {
+    "name": "sixthquestion",
+    "path": "/sixthquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/sixthquestion.vue",
+    "chunkName": "pages/sixthquestion"
+  },
+  {
+    "name": "thirdquestion",
+    "path": "/thirdquestion",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/thirdquestion.vue",
+    "chunkName": "pages/thirdquestion"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/Ugonna/Desktop/nuxt app/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
