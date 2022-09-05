@@ -1,20 +1,22 @@
 <template>
-    <nav class="navbar">
+  <nav class="navbar">
             <p class="nav-p">QUESTIONS? (917) 979-0001</p>              
-            <a href="#" class="image">
-                <img src="@/images/logo.png" alt="">
+            <a href="#" class="logos">
+                <img src="@/images/logo.png" alt="" class="image">
             </a>    
             <span class="nav-cancel"><i class="fa fa-times"></i>CANCEL</span>
         </nav>
+
 </template>
 
 <script>
 export default {
 
-}
+} 
 </script>
 
-<style>
+<style scoped>
+
 nav {
     background: #22252A;
     display: flex;
@@ -25,7 +27,7 @@ nav {
     height: 70px;
 }
 
-.image{
+.logos {
     position: absolute;
     width: 186px;
     height: 51px;
@@ -52,8 +54,12 @@ nav {
     cursor: pointer;
 }
 
-i {
-    margin-right: 10px;
+:root {
+    --primaryColor: #c58e7b;
+    --secondaryColor: #22252a;
+    --shade: #faf6f4;
+    --fontColor: #f7f5f1;
+    --spacing: 0.1rem;
+    --fontFamily: "Trebuchet MS";
 }
-
 </style>

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Appheader from '@/.nuxt/components/Appheader'
+import Appheader from '@/components/Appheader'
 export default {
   components:{
     Appheader
