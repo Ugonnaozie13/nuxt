@@ -7,69 +7,32 @@
                         <h4>Please provide your contact information?</h4>
                         <h6>We’ll contact you in your registered contact details to schedule your appointment.</h6>
                     </div>
-                    <div class ="wrapper">
+                    
                     <article class="options">
-                        <div>
-                        
-                        <button class="Opt">
-                            <h5>Acne</h5>
-                        </button>
-                        
-                        </div>
-                        <div>
-                        
-                        <button class="Opt opt2">
-                            <h5>Eczema</h5>
-                        </button>
-                        
-                        </div>
-                        <div>
-                        
-                        <button class="Opt opt3">
-                            <h5>Psoriasis</h5>
-                        </button>
-                        
-                        </div>
-                        <div>
-                         
-                        <button class="Opt opt4">
-                            <h5>Rheumatoid Arthritis</h5>
-                        </button>
-                        
-                        </div>
-                        <div>
-                        
-                        <button class="Opt opt5">
-                            <h5>Active cold store</h5>
-                        </button>
-                       
-                        </div>
-                        <div>
-                         
-                        <button class="Opt opt6">
-                            <h5>Rosacea</h5>
-                        </button>
-                      
-                        </div>
-                        <div>
-                         
-                        <button class="Opt opt7">
-                            <h5>Melasma</h5>
-                        </button>
-                        
-                        </div>
-                        <div>
-                         
-                        <button class="Opt opt7">
-                            <h5>Myasthenia Graves</h5>
-                        </button>
-                       
-                        </div>
-                    </article>
+
+                      <div class="event">
+                     <input type="text" placeholder="First name">
                     </div>
+                    <div class="event">
+                    <input type="text" placeholder="Last name">
+                   </div>
+                    <div class="event">
+                    <input type="text" placeholder="Email Address">
+                    </div>
+                     <div class="event">
+                    <input type="text" placeholder="Mobile number">
+                    </div>
+                    </article>
+                    
                     
                 </div>
             </section>
+            <div>
+                <button class="cont-btn" @click="$router.push('/12thquestion')">Continue</button>
+            </div>
+            <div>
+                    <button class="btn" type="button" @click="$router.push('/10thquestion')" > &lt; </button>
+            </div>
     </div>
 </template>
 
@@ -88,7 +51,7 @@ FONTS
 ==========
 Import your fonts below here please
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
 /* 
 ==========
 Variables
@@ -100,7 +63,7 @@ Variables
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
     --spacing: 0.1rem;
-    --fontFamily: "Trebuchet MS";
+    --fontFamily: "Poppins";
 }
 /* 
 =============
@@ -114,8 +77,8 @@ Global Styles
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    color: var(--fontColor);
+  /*  font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 ul {
     list-style-type: none;
@@ -128,8 +91,8 @@ h2,
 h3,
 h4 {
     letter-spacing: var(--spacing);
-    text-transform: capitalize;
-    font-size:large;
+    font-size: x-large;
+    font-weight: 10;
 }
 
 /* SECTION */
@@ -141,73 +104,59 @@ section {
     padding: 5rem 0;
 }
 .section-center {
-    padding: 0.5rem;
+    /*padding: 0.5rem;*/
     width: 30vw;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    
 }
 .title {
     text-align: center;
 }
 .options {
-    margin-top: 30px;
-    
-    border: 1px solid black;
-    /* padding: 1rem 0; */
-}
-.Opt {
-    background: white;
-    padding: 1rem;
-    border: transparent;
-    width: 100%;
-    text-align: left;
-    /* border: 0.5px solid var(--secondaryColor); */
-}
-.opt2 {
-    border-top: 1px solid black;
-}
-.opt3{
-     border-top: 1px solid black;
-}
-.opt4{
-     border-top: 1px solid black;
-}
-.opt5{
-     border-top: 1px solid black;
-}
-.opt6{
-     border-top: 1px solid black;
-}
-.opt7{
-     border-top: 1px solid black;
-}
-.opt8{
-     border-top: 1px solid black;
+    margin-top:0px;
+    margin-left: 30px;
+    border:  transparent;
+    padding: 1rem 0; 
 }
 
-
-
-
-.wrapper{
-    display:grid;
-    grid-template-columns: 1fr 1fr ;
-}
-.button {
-    padding: 1rem 4rem;
-    background-color: #C58E7B;
-    color: white;
-    width: 20rem;
-    font-weight: 700;
-    transition: 0.5s;
-}
 h6{
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    text-align: center;
-    margin-bottom: 72px;
+    font-family: var(--fontFamily);
+    letter-spacing: var(--spacing);
     font-size: small;
+    font-weight: 5;
+    padding: 1rem 0;
+}
+.event input{
+    width: 20rem;
+    border: 0.5px solid rgb(131, 131, 134);
+    padding: 1rem;
+    height: 50px;
+    display: flex;
+    
+}
+.cont-btn {
+    width: 175px;
+    height: 56px;
+    margin-left: 550px;
+ 
+    background: #C58E7B;
+    color: #F7F5F1;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+.btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 50px;
+    color: white;
+    background-color: #c58e7b;
+    border: transparent;
+    margin-top: 250px;
+    bottom: 5px;
 }
 </style>

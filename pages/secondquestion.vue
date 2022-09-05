@@ -10,7 +10,7 @@
                     <article class="options">
                         <div class="grid-item">
                         
-                        <button class="Opt opt2" @click="$router.push('/thirdquestion')">
+                        <button class="Opt opt1" @click="$router.push('/thirdquestion')">
                             <h5>Reduce fine lines and wrinkles</h5>
                         </button>
                         
@@ -24,35 +24,35 @@
                         </div>
                         <div class="grid-item">
                         
-                        <button class="Opt opt2" @click="$router.push('/thirdquestion')">
+                        <button class="Opt opt3" @click="$router.push('/thirdquestion')">
                             <h5>Remove unwanted hair</h5>
                         </button>
                         
                         </div>
                         <div >
                         
-                        <button class="Opt opt2" @click="$router.push('/thirdquestion')">
+                        <button class="Opt opt4" @click="$router.push('/thirdquestion')">
                             <h5>Body contouring & fat reduction</h5>
                         </button>
                         
                         </div>
                         <div >
                          
-                        <button class="Opt opt2" @click="$router.push('/thirdquestion')">
+                        <button class="Opt opt5" @click="$router.push('/thirdquestion')">
                             <h5>Plumping & lifting</h5>
                         </button>
                         
                         </div>
                         <div >
                          
-                        <button class="Opt opt2" @click="$router.push('/thirdquestion')">
+                        <button class="Opt opt6" @click="$router.push('/thirdquestion')">
                             <h5>Improve skin tone</h5>
                         </button>
                         
                         </div>
                         <div >
                         
-                        <button class="Opt opt2" @click="$router.push('/thirdquestion')">
+                        <button class="Opt opt7" @click="$router.push('/thirdquestion')">
                             <h5>Reserve sun damage & brown sports</h5>
                         </button>
                         
@@ -94,8 +94,8 @@ Variables
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
-    --fontFamily: "Trebuchet MS";
+    --spacing: 0.05rem;
+    
 }
 /* 
 =============
@@ -109,8 +109,8 @@ Global Styles
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    color: var(--fontColor);
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 ul {
     list-style-type: none;
@@ -123,7 +123,8 @@ h2,
 h3,
 h4 {
     letter-spacing: var(--spacing);
-    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 10;
 }
 
 /* SECTION */
@@ -153,31 +154,55 @@ section {
     /* border: 1px solid black; */
 
 }
-.grid-item {
-    padding: 0;
-}
+
 .Opt {
     background: white;
-    padding: 0.75rem;
+    padding: 1.5rem;
     width: 100%;
     text-align: left;
-    /* border: 0.5px solid var(--secondaryColor); */
+    border: 0.5px solid var(--secondaryColor); 
+    border-bottom: transparent;
+    border-right: transparent;
+}
+
+.opt6{
+    border-bottom: 0.5px solid black;
+    border-right: 0.5px solid black;
+}
+
+.opt7{
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;   
+}
+
+.opt4{
+    border-right: 0.5px solid black;
 }
 
 
+.opt2{
+    border-right: 0.5px solid black;
+}
+
+.grid-item {
+    border: #22252a;
+}
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
     bottom: 20px;
     color: white;
     background-color: #c58e7b;
+    border: transparent;
 }
 .page-controller{
     display: flex;
 }
 
-
+.Opt h5{
+  font-weight: 400;
+}
 
 </style>

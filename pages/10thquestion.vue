@@ -11,18 +11,18 @@
 <section class="big-container">
     
     <article class="options">
-                         
+        <p><b>Threads & Injectibles</b></p>
                         <div class="grid-item">
                         <div>
                         <button class="Opt opt">
-                            <h5>Perk up butox</h5>
+                            <h5>perk up botox</h5>
                         </button>
                         
                         </div>
                         <div>
                         
                         <button class="Opt opt2">
-                            <h5>Butox brow lift</h5>
+                            <h5>botox brow lift</h5>
                         </button>
                         
                         </div>
@@ -42,19 +42,18 @@
                         </div>
                         <div >
                         
-                        <button class="Opt opt2">
+                        <button class="Opt opt3">
                             <h5>QWO</h5>
                         </button>
                        
                         </div>
-                     
                         </div>
                          
                     </article>
                    
                     
                       <article class="options">
-                        
+                        <p><b>Skincare Services</b></p>
                         <div class="grid-item">
                         <div>
                         <button class="Opt 2">
@@ -72,7 +71,7 @@
                         </div >
                         <div >
                         
-                        <button class="Opt opt2">
+                        <button class="Opt opt3">
                             <h5>Microdermabrasion</h5>
                         </button>
                         
@@ -82,7 +81,7 @@
                         </div>
                     </article>
                     <article class="options">
-                         
+                        <p><b>Laser Services</b></p>
                         <div class="grid-item">
                         <div>
                         <button class="Opt opt">
@@ -120,7 +119,7 @@
                         </div>
                         <div >
                          
-                        <button class="Opt opt2">
+                        <button class="Opt opt3">
                             <h5>YAG Laser</h5>
                         </button>
                       
@@ -157,7 +156,7 @@ FONTS
 ==========
 Import your fonts below here please
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
 /* 
 ==========
 Variables
@@ -168,8 +167,8 @@ Variables
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
-    --fontFamily: "Trebuchet MS";
+    --spacing: 0.05rem;
+    --fontFamily: "Poppins";
 }
 /* 
 =============
@@ -183,8 +182,8 @@ Global Styles
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    color: var(--fontColor);
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 ul {
     list-style-type: none;
@@ -197,7 +196,16 @@ h2,
 h3,
 h4 {
     letter-spacing: var(--spacing);
-    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 10;
+}
+
+h6{
+    font-family: var(--fontFamily);
+    letter-spacing: var(--spacing);
+    font-size: small;
+    font-weight: 5;
+    padding: 1rem 0;
 }
 
 /* SECTION */
@@ -225,40 +233,36 @@ section {
 }
 .Opt {
     background: white;
-    padding: 0.75rem;
+    padding: 1.5rem;
     width: 100%;
     text-align: left;
-    /* border: 0.5px solid var(--secondaryColor); */
+    border: 0.5px solid var(--secondaryColor); 
+    border-bottom: transparent;
+}
+
+.opt3{
+    border-bottom: 0.5px solid black;
 }
 
 
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
-    bottom: 20px;
+    margin-top: 30px;
     color: white;
     background-color: #c58e7b;
+    border: transparent;
 }
 .page-controller{
     display: flex;
 }
-.h6 {
-    position: absolute;
-    margin-left: 50px;
-    top: 186px;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-}
+
 
 .big-container {
     /* border: 1px solid black; */
-    margin-top: 40px;
+    margin-top: 20px;
     width: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -277,6 +281,13 @@ section {
     cursor: pointer;
     text-align: center;
 }
-
+.Opt h5{
+  font-weight: 400;
+}
+.options p{
+    font-family: var(--fontFamily);
+    font-weight: 400;
+    font-size: small;
+}
 
 </style>

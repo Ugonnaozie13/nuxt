@@ -75,7 +75,18 @@ export default {
 }
 </script>
 
+
 <style >
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
+
+:root {
+    --primaryColor: #c58e7b;
+    --secondaryColor: #22252a;
+    --shade: #faf6f4;
+    --fontColor: #f7f5f1;
+    --spacing: 0.05rem;
+    --fontFamily: "Poppins";
+}
 *,::after,
 ::before {
     margin: auto;
@@ -171,6 +182,8 @@ i {
 
 /* TREATMENT SECTION*/
 
+
+
 .second-section {
     width: 100%;
     position: absolute;
@@ -182,28 +195,28 @@ i {
 }
 
 .second-left-side {
-    width: 40%;
+    width: 25%;
 }
 
 .second-left-side>h4 {
-    font-family: 'Proxima Nova';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 100px;
     letter-spacing: 0.1em;
     margin-left: 50px;
-    margin-top: 102px;
+    top: 700px;
 }
 
 .second-left-side>p {
     width: 309px;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-family: var(--fontFamily);
+    letter-spacing: var(--spacing);
+    font-size: small;
+    font-weight: 250;
+    padding: 1rem 0;
     margin-left: 50px;
-    margin-top: 24px;
     line-height: 24px;
 }
 
@@ -240,9 +253,8 @@ i {
 }
 
 .img-card {
-    width: 55%;
-    height: 370px;
-    margin-top: 102px;
+    height: 400px;
+    margin-top: 50px;
     background: #FFFFFF;
     border: 1px solid #DADDE8;
     border-radius: 10px 10px 5px 5px;
@@ -277,14 +289,11 @@ i {
     color: #C58E7B;
     border-radius: 43px;
     margin-top: 35px;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
-hr {
-    width: 320px;
-    margin-left: 10px;
-    margin-top: 14px;
-    border: 1px solid #DADDE8;
-}
+
 
 .text {
     margin-left: 24px;

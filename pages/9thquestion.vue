@@ -4,14 +4,13 @@
          <section class="hero-section">
                 <div class="section-center">
                     <div class="title">
-                        <h4>Which treatments should we discuss during your consultation?</h4>
+                        <h4>Which treatments should we discuss<br> during your consultation?</h4>
                         <h6>Select up to three treatments.</h6>
                     </div>
 
 <section class="big-container">
-    
     <article class="options">
-                         
+        <p><b>Threads & Injectibles</b></p>
                         <div class="grid-item">
                         <div>
                         <button class="Opt opt">
@@ -42,7 +41,7 @@
                         </div>
                         <div >
                         
-                        <button class="Opt opt2">
+                        <button class="Opt opt3">
                             <h5>QWO</h5>
                         </button>
                        
@@ -53,7 +52,7 @@
                    
                     
                       <article class="options">
-                        
+                        <p><b>Skincare Services</b></p>
                         <div class="grid-item">
                         <div>
                         <button class="Opt 2">
@@ -71,7 +70,7 @@
                         </div >
                         <div >
                         
-                        <button class="Opt opt2">
+                        <button class="Opt opt3">
                             <h5>Microdermabrasion</h5>
                         </button>
                         
@@ -81,7 +80,7 @@
                         </div>
                     </article>
                     <article class="options">
-                         
+                        <p><b>Laser Services</b></p>
                         <div class="grid-item">
                         <div>
                         <button class="Opt opt">
@@ -119,7 +118,7 @@
                         </div>
                         <div >
                          
-                        <button class="Opt opt2">
+                        <button class="Opt opt3">
                             <h5>YAG Laser</h5>
                         </button>
                       
@@ -158,7 +157,7 @@ FONTS
 ==========
 Import your fonts below here please
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
 /* 
 ==========
 Variables
@@ -169,8 +168,8 @@ Variables
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
-    --fontFamily: "Trebuchet MS";
+    --spacing: 0.05rem;
+    --fontFamily: "Poppins";
 }
 /* 
 =============
@@ -184,8 +183,8 @@ Global Styles
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    color: var(--fontColor);
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 ul {
     list-style-type: none;
@@ -198,7 +197,16 @@ h2,
 h3,
 h4 {
     letter-spacing: var(--spacing);
-    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 10;
+}
+
+h6{
+    font-family: var(--fontFamily);
+    letter-spacing: var(--spacing);
+    font-size: small;
+    font-weight: 5;
+    padding: 1rem 0;
 }
 
 /* SECTION */
@@ -223,39 +231,38 @@ section {
 .grid-item {
     padding: 0;
     width: 100%;
+    position: center;
 }
 .Opt {
     background: white;
-    padding: 0.75rem;
+    padding: 1.5rem;
     width: 100%;
     text-align: left;
-    /* border: 0.5px solid var(--secondaryColor); */
+    border: 0.5px solid var(--secondaryColor); 
+    border-bottom: transparent;
 }
+
+.opt3{
+    border-bottom: 0.5px solid black;
+}
+
+
 
 
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
-    bottom: 20px;
+    margin-top: 30px;
     color: white;
     background-color: #c58e7b;
+    border: transparent;
 }
 .page-controller{
     display: flex;
 }
-.h6 {
-    position: absolute;
-    margin-left: 50px;
-    top: 186px;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-}
+
 
 .big-container {
     /* border: 1px solid black; */
@@ -270,13 +277,20 @@ section {
     width: 175px;
     height: 56px;
     margin-left: 550px;
-    margin-top: 50px;
+    
     background: #C58E7B;
     color: #F7F5F1;
     border-radius: 2px;
     border: none;
     cursor: pointer;
 }
-
+.Opt h5{
+  font-weight: 400;
+}
+.options p{
+    font-family: var(--fontFamily);
+    font-weight: 400;
+    font-size: small;
+}
 
 </style>

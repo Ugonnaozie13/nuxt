@@ -1,12 +1,12 @@
 <template>
 <div class="big-container">
      <div class="main">
-        <h4>Do you have any special events coming up?</h4>
+        <h4>Do you have any special events <br>coming up?</h4>
         <div class="event">
             <input type="text" placeholder="Event name">
-           
         </div>
-        <h6 class="select">Select date</h6>
+        
+        <h6 class="select"><b>Select date</b></h6>
     </div>
     <div class="cont">
         <p><i class="fa-solid fa-arrow-left-long"></i>SEP 2021</p>
@@ -81,13 +81,15 @@ export default {
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
 :root {
     --primaryColor: #c58e7b;
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
-    --fontFamily: "Trebuchet MS";
+    --spacing: 0.05rem;
+    --fontFamily: "Poppins";
 }
 
 * {
@@ -97,8 +99,8 @@ export default {
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    /*color: var(--fontColor);*/
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 .main{
     text-align: center;
@@ -106,22 +108,22 @@ body {
     align-items: center;
     /* border: 1px solid blue; */
 }
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: var(--spacing);
+    font-size: x-large;
+    font-weight: 10;
+}
 h6{
-    /* border: 1px solid black; */
-    font-size: .8rem;
-    margin-left: 370px;
+    font-family: var(--fontFamily);
+    letter-spacing: var(--spacing);
+    font-size: small;
+    font-weight: 5;
+    padding: 1rem 0;
     text-align: left;
-    padding: 20px;
-    /* border: 1px solid black;
-     position: absolute;
-    margin-left: 50px;
-    top: 186px;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em; */
+    margin-left: 400px;
 }
 
 .event{
@@ -164,7 +166,6 @@ h6{
     height: 18rem;
     background-color: white;
     border: 1px solid rgb(119, 119, 119);
-    
 }
 
 .weekdays{
@@ -187,7 +188,7 @@ h6{
 }
 
 .days{
-    width: 100%;
+    
     display: flex;
     flex-wrap: wrap;
     padding: 0.2rem;
@@ -196,11 +197,12 @@ h6{
 .days div{
     font-size: 12px;
     margin: 0.3rem;
-    width: calc(27rem / 7);
+    width: 60px;
     height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .prev-date{
@@ -208,32 +210,23 @@ h6{
 }
 
 .days div:hover{
-    background-color: rgb(252, 249, 249);
-    border: 1px solid rgb(161, 160, 160);
+    background-color: silver;
+    border: transparent;
     cursor: pointer;
     border-radius: 50px;
+    width: 33px;
 }
 
-.but button{
-    padding: 15px 55px 15px 55px;
-    background-color: rgb(167, 125, 91);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius:50px;
-}
 
-.but{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0px 40px 0px;
-}
+
+
 .h4 {
     letter-spacing: var(--spacing);
     text-transform: capitalize;
-    font-size:large;
+    font-size: x-large;
+    font-weight: 10;
 }
+
 .cont-btn {
     width: 175px;
     height: 56px;
@@ -241,19 +234,19 @@ h6{
     margin-top: 50px;
     background: #C58E7B;
     color: #F7F5F1;
-    border-radius: 2px;
     border: none;
     cursor: pointer;
     text-align: center;
 }
+
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
-    bottom: 20px;
     color: white;
     background-color: #c58e7b;
+    border: transparent;
 }
 .page-controller{
     display: flex;
@@ -261,4 +254,5 @@ h6{
 .big-container{
     margin-top: 80px;
 }
+
 </style>

@@ -4,14 +4,14 @@
          <section class="hero-section">
                 <div class="section-center">
                     <div class="title">
-                        <h4>Are you currently taking medications from this list?</h4>
-                        <h6>We may ask you to pause certain medications around time of treatment</h6>
+                        <h4>Are you currently taking medications <br>from this list?</h4>
+                        <h6>We may ask you to pause certain medications<br> around time of treatment</h6>
                     </div>
                     <div class ="grid-container">
                     <article class="options">
                         <div class="grid-item">
                         
-                        <button class="Opt opt2" @click="$router.push('/seventhquestion')">
+                        <button class="Opt opt1" @click="$router.push('/seventhquestion')">
                             <h5>Accutane</h5>
                         </button>
                         
@@ -25,35 +25,35 @@
                         </div>
                         <div class="grid-item">
                         
-                        <button class="Opt opt2" @click="$router.push('/seventhquestion')">
+                        <button class="Opt opt3" @click="$router.push('/seventhquestion')">
                             <h5>Anti-histamines</h5>
                         </button>
                         
                         </div>
                         <div class="grid-item">
                         
-                        <button class="Opt opt2" @click="$router.push('/seventhquestion')">
+                        <button class="Opt opt4" @click="$router.push('/seventhquestion')">
                             <h5>Fish oil</h5>
                         </button>
                         
                         </div>
                         <div class="grid-item">
                          
-                        <button class="Opt opt2" @click="$router.push('/seventhquestion')">
+                        <button class="Opt opt5" @click="$router.push('/seventhquestion')">
                             <h5>Aspirin or Ibuprofen</h5>
                         </button>
                         
                         </div>
                         <div >
                          
-                        <button class="Opt opt2" @click="$router.push('/seventhquestion')">
+                        <button class="Opt opt6" @click="$router.push('/seventhquestion')">
                             <h5>Herbal supplements including green tea</h5>
                         </button>
                         
                         </div>
                         <div >
                         
-                        <button class="Opt opt2" @click="$router.push('/seventhquestion')">
+                        <button class="Opt opt7" @click="$router.push('/seventhquestion')">
                             <h5>Anti-coagulation medication</h5>
                         </button>
                         
@@ -87,7 +87,7 @@ FONTS
 ==========
 Import your fonts below here please
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
 /* 
 ==========
 Variables
@@ -98,8 +98,8 @@ Variables
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
-    --fontFamily: "Trebuchet MS";
+    --spacing: 0..05rem;
+    --fontFamily: "Poppins";
 }
 /* 
 =============
@@ -113,8 +113,8 @@ Global Styles
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    color: var(--fontColor);
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 ul {
     list-style-type: none;
@@ -127,8 +127,18 @@ h2,
 h3,
 h4 {
     letter-spacing: var(--spacing);
-    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 10;
 }
+
+h6{
+    font-family: var(--fontFamily);
+    letter-spacing: var(--spacing);
+    font-size: small;
+    font-weight: 5;
+    padding: 1rem 0;
+}
+
 
 /* SECTION */
 section {
@@ -157,40 +167,63 @@ section {
     /* border: 1px solid black; */
 
 }
-.grid-item {
-    padding: 0;
-}
+
 .Opt {
     background: white;
-    padding: 0.75rem;
+    padding: 1.5rem;
     width: 100%;
     text-align: left;
-    /* border: 0.5px solid var(--secondaryColor); */
+    border: 0.5px solid var(--secondaryColor); 
+    border-bottom: transparent;
+    border-right: transparent;
+}
+
+.opt6{
+    border-bottom: 0.5px solid black;
+    border-right: 0.5px solid black;
+}
+
+.opt7{
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;   
+}
+
+.opt4{
+    border-right: 0.5px solid black;
+}
+
+
+.opt2{
+    border-right: 0.5px solid black;
 }
 
 
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
-    bottom: 20px;
+    margin-top: 20px;
     color: white;
     background-color: #c58e7b;
+    border: transparent;
+    margin-bottom: 20px;
 }
-.page-controller{
-    display: flex;
-}
+
 .cont-btn {
     width: 175px;
     height: 56px;
     margin-left: 550px;
-    margin-top: 50px;
+    margin-top: 20px;
+    
     background: #C58E7B;
     color: #F7F5F1;
     border-radius: 2px;
     border: none;
     cursor: pointer;
+}
+.Opt h5{
+  font-weight: 400;
 }
 
 

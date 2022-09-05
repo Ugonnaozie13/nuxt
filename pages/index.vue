@@ -2,11 +2,11 @@
  <div class="hero-container">
      <div class="section-title">
 
-         <h5>10 Questions?</h5>
+         <h5>10 Questions</h5>
      </div>
      <div class="section-body">
 
-         <h2>Let's get to know each other</h2> 
+         <h2>Let's get to know <br>each other</h2> 
 
          <div class="info">
              <p >Take a short 3 minute skin quiz to receive a personalized skincare plan that meets your beauty goal</p>
@@ -37,7 +37,7 @@ FONTS
 ==========
 Import your fonts below here please
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
 /* 
 ==========
 Variables
@@ -48,8 +48,8 @@ Variables
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
-    --fontFamily: "Trebuchet MS";
+    --spacing: 0.05rem;
+    --fontFamily: "Poppins";
 }
 /* 
 =============
@@ -77,7 +77,7 @@ a {
 
 .hero-container {
     width: fit-content;
-    padding: 2rem;
+    padding: 0.5rem;
     margin-right: auto;
     margin-left: auto;
     margin-top: 15vh;
@@ -119,16 +119,33 @@ a {
     margin-top: 20px;
 
 }
+p{
+    font-family: var(--fontFamily);
+    letter-spacing: var(--spacing);
+    font-size: small;
+    font-weight: 300;
+    padding: 1rem 0;
+}
 .cont-btn {
     width: 175px;
     height: 56px;
-    margin-left: 170px;
-    margin-top: 60px;
+    margin-left: 280px;
+    margin-top: 20px;
     background: #C58E7B;
     color: #F7F5F1;
     border: transparent;
-    cursor: pointer;
     text-align: center;
+}
+
+h2{
+    letter-spacing: var(--spacing);
+    font-size: x-large;
+    font-weight: 5;
+}
+
+h5{
+    font-weight: 300;
+    font-family: var(--fontFamily);
 }
 
 </style>

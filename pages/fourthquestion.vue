@@ -10,7 +10,7 @@
             <article class="options">
                 <div class="grid item">
                 <div>
-                <button class="Opt" @click="$router.push('/fifthquestion')">
+                <button class="Opt opt1" @click="$router.push('/fifthquestion')">
                 <div >
                 <div class="logo-container">
                 <img src="@/images/Mask Group (1).png" alt="" class="logo">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="grid item">
                 
-                 <button class="Opt" @click="$router.push('/fifthquestion')">
+                 <button class="Opt opt2" @click="$router.push('/fifthquestion')">
                 <div >
                     <div class="logo-container">
                     <img src="@/images/image 79.png" alt="" class="logo">
@@ -37,7 +37,7 @@
                         </div>
                     
                <div class="grid item">
-               <button class="Opt" @click="$router.push('/fifthquestion')">
+               <button class="Opt opt3" @click="$router.push('/fifthquestion')">
                <div>
                     <div class="logo-container">
                     <img src="@/images/image 84.png" alt="" class="logo">
@@ -50,7 +50,7 @@
                         </div>
 
                <div class="grid item">
-               <button class="Opt" @click="$router.push('/fifthquestion')">
+               <button class="Opt opt4" @click="$router.push('/fifthquestion')">
                <div>
                     <div class="logo-container">
                     <img src="@/images/image 83.png" alt="" class="logo">
@@ -63,7 +63,7 @@
                         </div>
 
               <div class="grid item">
-               <button class="Opt" @click="$router.push('/fifthquestion')">
+               <button class="Opt opt5" @click="$router.push('/fifthquestion')">
                <div>
                     <div class="logo-container">
                     <img src="@/images/image 72.png" alt="" class="logo">
@@ -76,7 +76,7 @@
                         </div>
 
             <div class="grid item">
-               <button class="Opt" @click="$router.push('/fifthquestion')">
+               <button class="Opt opt6" @click="$router.push('/fifthquestion')">
                <div>
                     <div class="logo-container">
                     <img src="@/images/image 78.png" alt="" class="logo">
@@ -118,7 +118,7 @@ Import your fonts below here please
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
+    --spacing: 0.05rem;
     --fontFamily: "Trebuchet MS";
 }
 /* 
@@ -133,8 +133,8 @@ Variables
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    color: var(--fontColor);
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 ul {
     list-style-type: none;
@@ -147,7 +147,8 @@ h2,
 h3,
 h4 {
     letter-spacing: var(--spacing);
-    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 10;
 }
 
 /* SECTION */
@@ -185,18 +186,36 @@ section {
     padding: 0.75rem;
     width: 100%;
     text-align: left;
-    /* border: 0.5px solid var(--secondaryColor); */
+    border: 0.5px solid var(--secondaryColor); 
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+.opt4{
+    border-bottom: 0.5px solid black;
+}
+.opt5{
+    border-bottom: 0.5px solid black;
+}
+.opt6{
+    border-bottom: 0.5px solid black;
+    border-right: 0.5px solid black;
+}
+
+.opt3{
+    border-right: 0.5px solid black;
 }
 
 
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
     bottom: 20px;
     color: white;
     background-color: #c58e7b;
+    border: transparent;
 }
 .page-controller{
     display: flex;
@@ -205,12 +224,14 @@ section {
 .logo{
   height: 100px;
   margin: 15px;
+  border-radius: 50px;
 }
 .subtitle{
     text-align: center;
 } 
-.logo-container{
-     border-radius: 100px;
+
+.Opt h5{
+  font-weight: 400;
 }
 
 

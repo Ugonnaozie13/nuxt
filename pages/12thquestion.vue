@@ -73,8 +73,8 @@ Global Styles
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    color: var(--fontColor);
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 ul {
     list-style-type: none;
@@ -87,7 +87,8 @@ h2,
 h3,
 h4 {
     letter-spacing: var(--spacing);
-    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 10;
 }
 
 /* SECTION */
@@ -111,7 +112,7 @@ section {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 0.5px solid black;
     /* padding: 1rem 0; */
 }
 .Opt {
@@ -123,36 +124,31 @@ section {
     /* border: 0.5px solid var(--secondaryColor); */
 }
 .opt2 {
-    border-top: 1px solid black;
+    border-top: 0.5px solid black;
 }
 
 
 /* FOOTER */
 
-.ret-icon {
-    cursor: pointer;
-    background: var(--primaryColor);
-    border: none;
-    color: var(--shade);
-    padding: 0.2rem;
-    border-radius: 0.3em;
-    position: fixed;
-    bottom: 30px;
-    right: 40px;
-}
+
+
 
 
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
-    bottom: 20px;
+    bottom: 10px;
     color: white;
     background-color: #c58e7b;
+    border: transparent;
 }
 .page-controller{
     display: flex;
+}
+.Opt h5{
+  font-weight: 400;
 }
 
 </style>

@@ -1,17 +1,18 @@
 <template>
-<div>
+<div class="big-container">
         <div class="main">
             <h4>Do you have any upcoming <br> vaccination?</h4>
-        <h6>Vaccinations can sometimes affect the outcomes of certain
-           treatments. If you have, or if you have, any type of 
-           vaccine within 30days of treatment, please indicate the
+        <h6>Vaccinations can sometimes affect the outcomes of certain<br>
+           treatments. If you have, or if you have, any type of<br>
+           vaccine within 30days of treatment, please indicate the<br>
            vaccination date below.</h6>
         </div>   
     <div class="cont">
-        <p><i class="fa-solid fa-arrow-left-long"></i>SEP 2021</p>
+        <p>SEP 2021</p>
         <p>OCT 2021</p>
-        <P>NOV 2021 <i class="fa-solid fa-arrow-right-long"></i></P>
+        <P>NOV 2021 </P>
     </div>
+    
     <div class="calend">
         <div class="con">
             <div class="calendar">
@@ -65,7 +66,7 @@
         </div>  
     </div>
      <div>
-    <button class="cont-btn" @click="$router.push('/end')">Continue</button>
+    <button class="cont-btn" @click="$router.push('/endpage')">Continue</button>
     </div>
 <div>
     <button class="btn" type="button" @click="$router.push('/16thquestion')" > &lt; </button>
@@ -80,13 +81,15 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
+
 :root {
     --primaryColor: #c58e7b;
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
-    --fontFamily: "Trebuchet MS";
+    --spacing: 0.05rem;
+    --fontFamily: "Poppins";
 }
 
 * {
@@ -94,30 +97,26 @@ export default {
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background: var(--shade);
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
+}
 .main{
     text-align: center;
     justify-content: center;
     align-items: center;
     /* border: 1px solid blue; */
 }
-.h6 {
-    position: absolute;
-    margin-left: 50px;
-    top: 186px;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    font-size:medium;
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: var(--spacing);
+    font-size: x-large;
+    font-weight: 10;
 }
-main p{
-    font-size: 12px;
-    padding: 15px;
-    font-weight: bolder;
-    padding-right: 30rem;
-}
+
 .event{
     justify-content: center;
     text-align: center;
@@ -148,6 +147,7 @@ main p{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     /*
     
 */
@@ -204,6 +204,7 @@ main p{
     background-color: rgb(252, 249, 249);
     border: 1px solid rgb(161, 160, 160);
     cursor: pointer;
+    border-radius: 50px;
 }
 
 .but button{
@@ -212,6 +213,7 @@ main p{
     color: white;
     border: none;
     cursor: pointer;
+    border-radius:50px;
 }
 
 .but{
@@ -220,10 +222,18 @@ main p{
     align-items: center;
     margin: 40px 0px 40px 0px;
 }
-h4 {
+.h4 {
     letter-spacing: var(--spacing);
     text-transform: capitalize;
-    font-size:larger;
+    font-size: x-large;
+    font-weight: 10;
+}
+h6{
+    font-family: var(--fontFamily);
+    letter-spacing: var(--spacing);
+    font-size: small;
+    font-weight: 5;
+    padding: 1rem 0;
 }
 .cont-btn {
     width: 175px;
@@ -239,15 +249,20 @@ h4 {
 }
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
-    bottom: 20px;
+ 
     color: white;
     background-color: #c58e7b;
+    border: transparent;
 }
 .page-controller{
     display: flex;
 }
+.big-container{
+    margin-top: 80px;
+}
+
 </style>
 

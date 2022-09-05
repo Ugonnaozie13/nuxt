@@ -9,8 +9,8 @@
             <div class="grid-container">
             <article class="options">
                 <div class="grid item">
-                <button class="Opt" @click="$router.push('/result')">
-                <div >
+                <button class="Opt opt1" @click="$router.push('/result')">
+                <div>
                 <div class="img">
                 <img src="@/images/Mask Group.png" alt="" class="logo">
                 </div>
@@ -23,7 +23,7 @@
                 
                 <div class="grid item">
                 
-                 <button class="Opt" @click="$router.push('/result')">
+                 <button class="Opt opt2" @click="$router.push('/result')">
                 <div >
                     <div class="img">
                     <img src="@/images/image 76.png" alt="" class="logo">
@@ -36,7 +36,7 @@
                         </div>
                     
                <div class="grid item">
-               <button class="Opt" @click="$router.push('/result')">
+               <button class="Opt opt3" @click="$router.push('/result')">
                <div>
                     <div class="img">
                     <img src="@/images/image 77.png" alt="" class="logo">
@@ -49,7 +49,7 @@
                         </div>
 
                <div class="grid item">
-               <button class="Opt" @click="$router.push('/result')">
+               <button class="Opt opt4" @click="$router.push('/result')">
                <div>
                     <div class="img">
                     <img src="@/images/image 74 (1).png" alt="" class="logo">
@@ -62,7 +62,7 @@
                         </div>
 
               <div class="grid item">
-               <button class="Opt" @click="$router.push('/result')">
+               <button class="Opt opt5" @click="$router.push('/result')">
                <div>
                     <div class="img">
                     <img src="@/images/image 89.png" alt="" class="logo">
@@ -104,7 +104,7 @@ Import your fonts below here please
     --secondaryColor: #22252a;
     --shade: #faf6f4;
     --fontColor: #f7f5f1;
-    --spacing: 0.1rem;
+    --spacing: 0.05rem;
     --fontFamily: "Trebuchet MS";
 }
 /* 
@@ -119,8 +119,8 @@ Variables
 }
 body {
     background: var(--shade);
-    font-family: var(--fontFamily);
-    color: var(--fontColor);
+    /*font-family: var(--fontFamily);
+    color: var(--fontColor);*/
 }
 ul {
     list-style-type: none;
@@ -133,7 +133,8 @@ h2,
 h3,
 h4 {
     letter-spacing: var(--spacing);
-    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 10;
 }
 
 /* SECTION */
@@ -168,35 +169,56 @@ section {
 }
 .Opt {
     background: white;
-    padding: 0.75rem;
+    padding: 0.5rem;
     width: 100%;
     text-align: left;
-    /* border: 0.5px solid var(--secondaryColor); */
+    border: 0.5px solid var(--secondaryColor); 
+    border-bottom: transparent;
+    border-right: transparent;
 }
 
 
+
+.opt5{
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;   
+}
+
+.opt4{
+    border-bottom: 0.5px solid black;
+}
+
+
+.opt3{
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+}
+
 .btn{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     right: 50px;
     bottom: 20px;
     color: white;
     background-color: #c58e7b;
+    border: transparent;
 }
 .page-controller{
     display: flex;
 }
 
-.logo {
+.logo{
   height: 100px;
-  margin: 15px;
+  margin: 30px;
+  border-radius: 50px;
 }
 .subtitle{
     text-align: center;
 } 
-.logo-container{
-     border-radius: 100px;
+
+.Opt h5{
+  font-weight: 400;
 }
 
 
