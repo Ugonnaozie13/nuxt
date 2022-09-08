@@ -155,7 +155,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     width: max-content;
-    margin-left: 30px;
+    margin-left: 10px;
     
 
     
